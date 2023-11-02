@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Владимир и Юлия</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="firstvid">
+        <img class="fotomain" src="fotomain.png" alt="фото жениха и невесты" width="927px">
+        <div class="textcontainer">
+            <p class="textname">Владимир</p>
+            <p class="textname">Юлия</p>
+            <p class="textdate">4.08.2023</p>
+            <p class="textleft">до свадьбы осталось</p>
+            <div class="timer">
+                <div class="timer__items">
+                    <div class="timer__item timer__days">00</div>
+                    <div class="timer__item timer__hours">00</div>
+                    <div class="timer__item timer__minutes">00</div>
+                    <div class="timer__item timer__seconds">00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="secondvid">
+        <p class="header fersttext">ДОРОГИЕ НАШИ ДРУЗЬЯ!</p>
+        <p class="text">Вы получили эту ссылку, <br> а значит мы спешим сообщить <br> вам важную новость!</p>
+        <p class="header">МЫ ЖЕНИМСЯ!</p>
+        <p class="text">И мы очень хотим разделить <br> с вами этот счастливый праздник.</p>
+        <p class="textbold">Ждём вас на нашей свадьбе! <br> Начало в 17:00</p>
+    </div>
+
+    <div class="thirdvid">
+        <p class="header fersttext">ПЛАН МЕРОПРИЯТИЯ</p>
+        <div>
+            <img class="icon fersttext" src="groupicon.png" alt="план мероприятий">
+        </div>
+    </div>
+
+    <div class="fourvid">
+        <p class="header fersttext">МЕСТО ПРОВЕДЕНИЯ</p>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A387a65dbf8971caca05985c3ff32e9faace88a3601303a50a6d34be415dcc370&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+    </div>
+
+    <div class="fivevid">
+        <p class="header fersttext">ПОЖАЛУЙСТА <br> ПОДТВЕРДИТЕ СВОЕ <br> ПРИСУТСТВИЕ</p>
+        <form class="formpresence" action="https://formsubmit.co/marina9290@yandex.ru" method="POST">
+            <label for="name">Имя</label>
+            <input class="pole" type="text" id="name" name="Имя" placeholder="Имя">
+            <label for="surname">Фамилия</label>
+            <input  class="pole" type="text" id="surname" name="Фамилия" placeholder="Фамилия">
+            <label for="presence">Подтвердите своё присутствие</label>
+            <select  class="pole" name="присутствие" id="presence">
+                <option value="Обязательно буду">Обязательно буду</option>
+                <option value="Не смогу прийти">Не смогу прийти</option>
+            </select>
+            <label for="companion">С кем вы придёте?</label>
+            <input class="pole" type="text" id="companion" name="Cпутник" placeholder="Имя Фамилия">
+            <label for="alcohol">Какой алкоголь вы предпочитаете?</label>
+            <div class="checkboxcontainer">
+                <div class="item"><label for="redwine">Красное вино<input class="checkbox" type="checkbox" name="Красное_вино" id="redwine"></label></div>
+                <div><label for="whitewine">Белое вино<input class="checkbox" type="checkbox" name="Белое_вино" id="whitewine"></label></div>
+                <div><label for="champagne">Шампанское<input class="checkbox" type="checkbox" name="Шампанское" id="champagne"></label></div>
+                <div><label for="vodka">Водка<input class="checkbox" type="checkbox" name="Водка" id="vodka"></label></div>
+                <div><label for="cognac">Коньяк<input class="checkbox" type="checkbox" name="Коньяк" id="cognac"></label></div>
+                <div><label for="moonshine">Самогон<input class="checkbox" type="checkbox" name="Самогон" id="moonshine"></label></div>
+                <div><label for="softdrinks">Безалкогольные напитки<input class="checkbox" type="checkbox" name="Безалкогольные_напитки" id="softdrinks"></label></div>
+            </div>
+            <input class="btn" type="submit" value="Отправить">
+            
+        </form>
+    </div>
+    <!-- <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe src="https://forms.yandex.ru/u/64440e5f2530c20bcdac27b8/?iframe=1" frameborder="0" name="ya-form-64440e5f2530c20bcdac27b8" width="650"></iframe> -->
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2PK8H_bD7c_iSqyRoVMy_27AADJE48Ihrq-I_AR6jpv-xFg/viewform?embedded=true" width="640" height="1400" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe> -->
+    <script src="script.js"></script>
+</body>
+</html>

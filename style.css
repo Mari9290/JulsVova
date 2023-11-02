@@ -1,0 +1,268 @@
+html {
+    background-image: url(elegant.jpg);
+    background-color: #EEEEEE;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    margin:0;
+}
+
+/* Первый экран */
+
+.firstvid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.fotomain {
+    width: auto;
+    height: 100vh;
+}
+
+.textcontainer {
+    position: absolute;
+    bottom: 45px;
+}
+
+.textname {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+    line-height: 50px;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 0;
+}
+
+.textdate {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;
+    line-height: 59px;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 0;
+}
+
+.textleft {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #EEEEEE;
+    text-align: center;
+}
+
+/* обратный отсчет */
+
+.timer__items {
+    display: flex;
+    font-size: 30px;
+    color: #EEEEEE;
+    font-family: 'Playfair Display SC', serif;
+}
+    .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+    .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+    .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
+/* второй экран */
+
+.secondvid {
+    height: 100vh;
+}
+
+.fersttext {
+    padding-top: 40px;
+}
+
+.header {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59px;
+    text-align: center;
+    color: #AE8625;
+}
+
+.text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #492819;
+}
+
+.textbold {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #492819;
+}
+
+/* третий экран */
+
+.thirdvid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  четвертый экран */
+
+
+.fourvid {
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+
+
+.formpresence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, select {
+    width: 300px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #492819;
+}
+
+.checkboxcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.checkbox {
+    width: 50px;
+}
+
+.btn {
+    color: #492819;
+    background-color:  rgba(0, 125, 215, 0.0);
+    border: 3px solid #AE8625;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.pole {
+    color: #492819;
+    background-color:  rgba(0, 125, 215, 0.0);
+    border: 3px solid #AE8625;
+    border-radius: 10px;
+}
+
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+    .textname {
+        font-size: 35px;
+    }
+    .textleft {
+        margin: 0;
+        font-size: 18px;
+    }
+    .fersttext {
+        /* margin-top: 20px; */
+        padding-top: 0px;
+    }
+    .textcontainer {
+        bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .fotomain {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .map {
+        width: 90%;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .header {
+        font-size: 30px;
+    }
+    
+    .text {
+        font-size: 16px;
+    }
+    
+    .textbold {
+        font-size: 16px;
+    }
+
+    .firstvid {
+        height: 70vh;
+    }
+    /* .textname {
+    line-height: 40px;
+}
+
+.textdate {
+    line-height: 40px;
+}
+
+.textleft {
+    line-height: 32px;
+}
+
+.timer__item {
+    margin: 0;
+} */
+
+}
+@media (max-width: 575px) {
+
+}
